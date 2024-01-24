@@ -1,5 +1,7 @@
 import 'package:counter_bloc/bloc/counter/counter_bloc.dart';
+import 'package:counter_bloc/bloc/switch/bloc/switch_bloc.dart';
 import 'package:counter_bloc/ui/counter.dart';
+import 'package:counter_bloc/ui/switch_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -20,7 +22,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-        create: (context) => CounterBloc(),
-        child: MaterialApp(home: CounterScreen()));
+        create: (context) => SwitchBloc(),
+        child: MaterialApp(home: SwitchScreen()));
   }
 }
